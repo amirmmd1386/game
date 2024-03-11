@@ -1,0 +1,31 @@
+@font-face {
+    font-family: digit;
+    src: url(Sports_Font/DIGITALDREAM.ttf);
+}
+
+.counter {
+    display: none;
+    font-family: digit;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    position: fixed;
+    margin: auto;
+    /* margin-right: 50px;*/
+    margin-bottom: 25px; 
+    bottom: 0;
+    right: 25%;
+    background-color: #f7f7ff;
+    padding: 5px 15px;
+    border: 10px solid rgb(204, 201, 201);
+    border-radius: 5px;
+    z-index: 200;
+}
+
+.value {
+    display: block;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: sport;
+    src: url("Sports_Font/AMehdiHeydari.ttf");
+}
+
+* {
+
+    padding: 0;
+    margin: 0;
+}
+
+body {}
+
+.modals {
+    font-family: sport;
+    display: none;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+}
+
+.modal-contents {
+    border-radius: 15px;
+    width: 400px;
+    height: fit-content;
+    background-color: #fefefe;
+    margin: auto;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    word-wrap: break-word;
+    padding: 10px;
+    border: 1px solid #888;
+
+}
+
+.close {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#search {
+    font-family: sport;
+    font-size: larger;
+    border-radius: 5px;
+    background: #f7f7f7;
+    padding: 0px 10px;
+    width: 220PX;
+    border: 3px solid gainsboro;
+    outline: none;
+}
+
+button {
+    font-family: sport;
+    background-color: #f7f7f7;
+    padding: 2px 10px;
+    border: 3px solid gainsboro;
+    text-align: center;
+}
+
+.push {
+    width: 35px;
+    height: 35px;
+    border: 1px solid black;
+    background-color: darkgrey;
+    transition: all ease 0.5s;
+}
+
+.push:hover {
+    perspective: 1000px;
+    transform: scale(1.5);
+}
+
+#pictureBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: auto;
+}
+
+article li {
+    list-style-type: none;
+}
+
+article ul {
+    font-family: sport;
+    padding-right: 5px;
+    width: 220px;
+    position: absolute;
+    max-height: 25px;
+    z-index: 100;
+    background-color: rgb(202, 203, 204);
+    overflow-y: scroll;
+    /* width: 60PX; */
+}
+
+.searchDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+footer,
+header {
+    font-family: sport;
+    background-color: gainsboro;
+}
+
+@media screen and (max-width: 750px) {
+    #pictureBox {
+        width: 250px;
+        height: 360px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .push {
+        width: 25px;
+        height: 23px;
+    }
+
+    .modal-contents {
+        width: 90%;
+        height: fit-content;
+    }
+}
