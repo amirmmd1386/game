@@ -8,12 +8,12 @@ let find = () => {
     if (lose) {
         photo[randPhoto].name == searchBox.value ? toastSweet('success', 'تبریک میگم درست حدس زدید', '#E9F5DB') : toastSweet('error', 'اشتباه حدس زدید متاسفانه', '#ffc0cb')
         stop()
-        reset()
-        lose = false
+        reset() 
         st = true
     }
     else {
         toastSweet('error', 'شما شکست خوردید', '#ffc0cb')
+         lose = false
     }
     selPic()
 }
