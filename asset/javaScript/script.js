@@ -17,6 +17,7 @@ pictureBox.addEventListener('click', e => {
 
 //برای انتخاب عکس و ساخت باکس ها
 let selPic = () => {
+    reset()
     st = true
     pictureBox.innerHTML = ""
     searchBox.value = ""
