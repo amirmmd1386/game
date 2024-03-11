@@ -13,9 +13,9 @@ let find = () => {
     }
     else {
         toastSweet('error', 'شما شکست خوردید', '#ffc0cb')
-         lose = false
+        toastSweet('error', 'بازیکن تعویض شد', '#ffc0cb')
+         lose = true
     }
-    toastSweet('error', 'بازیکن تعویض شد', '#ffc0cb')
     selPic()
 }
 //لیست بار
