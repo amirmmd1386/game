@@ -1,6 +1,6 @@
 let sec = document.getElementById('seconds');
 let counter = document.querySelector('.counter')
-let seconds = 10;
+let seconds = 20;
 let Interval;
 let lose = true
 function start() {
