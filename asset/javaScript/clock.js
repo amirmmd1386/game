@@ -16,7 +16,7 @@ function stop() {
 function reset() {
     clearInterval(Interval);
     sec.innerHTML = '00';
-    seconds = 10;
+    seconds = 20;
 }
 
 function startTimer() {
